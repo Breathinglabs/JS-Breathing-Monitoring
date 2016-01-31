@@ -1,0 +1,468 @@
+/*reset*/
+    html, body, div, span, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    abbr, address, cite, code,
+    del, dfn, em, img, ins, kbd, q, samp,
+    small, strong, sub, sup, var,
+    b, i,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section, summary,
+    time, mark, audio, video {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+body,html{
+	width:100%;
+}
+
+/*Header*/
+header{
+	width:100%;
+	border-bottom:1px solid gray;
+	padding:0px;
+	
+}
+
+header .main-title{
+	width:40%;
+	float:left;
+}
+
+header .main-title img{
+	width:100%;
+}
+
+#main{
+	margin-bottom:30px;
+}
+
+/*content*/
+.content{
+	width:1335px;
+	background:transparent;
+	margin:0px auto; in addOns.js
+	//margin-top:30px;
+	
+}
+
+@media only screen and (max-width:1300px){
+	.content{
+		width:90%;
+	}
+}
+
+/*menu*/
+ .menu{
+	display:block;
+	position:relative;
+	width:55%;
+	float:left;
+	
+}
+
+.menu ul{
+	float:right;
+	padding-top:35px;
+}
+
+.menu li{
+	display:inline-block;
+}
+
+.menu li a{
+  	display:block;
+	font-size:1.4em;
+	font-weight:500;
+	margin:5px 15px;
+	color:#000;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	cursor:pointer;
+}
+
+.menu li a:hover {
+	 padding-bottom:3px;
+	 border-bottom:2px solid gray;
+} 
+
+/*start stop buttons*/
+.startstop{
+	padding-bottom:10px;
+	border-bottom:1px solid gray;
+}
+
+.startstop input, .arrayDiv input{
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #ffffff;
+	padding : 10px 30px;
+	margin-right:20px;
+	background : -moz-linear-gradient(top, #053494 0%, #addbff 100%);
+	background : -webkit-linear-gradient(top, #053494 0%, #addbff 100%);
+}
+
+
+.startstop input:hover, .arrayDiv input:hover{
+	background : -moz-linear-gradient(top, #addbff 0%, #053494 100%);
+	background : -webkit-linear-gradient(top, #addbff 0%, #053494 100%);
+	cursor:pointer;
+}
+
+
+/*Explanation*/
+
+.explanation{
+	width:100%;
+	height:240px;
+	margin:20px 0px;
+	padding-bottom:20px;
+} 
+
+.explanation .node{
+	width:160px;
+	padding:5px;
+	float:left;
+	text-align:center;
+	-webkit-box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+}
+
+.explanation  .node:nth-child(-n+7){
+	position:relative;
+	
+}
+
+.explanation  .node p{
+	width:99%;
+	font-size:1.3em;
+}
+
+.explanation  .arrows{
+	width:50px;
+	float:left;
+}
+.arrow-right{
+	width: 0; 
+	height: 0; 
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 30px solid green;
+	margin-left:10px;
+}
+
+.explanation  .node img{
+	width:100%;
+}
+
+.explanation .node_event{
+	width:40%;
+	text-align:justify;
+	padding:15px;
+	float:left;	
+	margin-left:3%;
+	-webkit-box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 15px rgba(0,0,0,1.0);
+}
+
+.explanation .node_event h1{
+	border-bottom:1px solid gray;
+}
+
+.explanation .node_event h2{
+	color:gray;
+	margin:5px;
+}
+
+.explanation .node_event p{
+	margin-left:10px;	
+	margin-top:5px;
+	font-size:1.1em;
+}
+
+.explanation:nth-child(5) {
+	border-bottom:1px solid gray;
+	height:auto;
+}
+
+/*Parameters*/
+
+
+.parameters{
+	margin:25px;
+	margin-top:50px;
+	position:relative;
+}
+
+.parameters #checkClick{
+	margin-top:15px;
+}
+
+.parameters .enter-param{
+	text-align:left;
+	width:100%;
+	padding:10px;
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+}
+
+
+
+.parameters .enter-param h2{
+	border-bottom:2px solid gray;
+	margin-bottom:10px;
+	padding-bottom:2px;
+}
+
+.parameters .enter-param .form_content{
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.parameters .enter-param .form_content p{
+	margin-left:20px;
+}
+
+.parameters .enter-param  #paramWarning{
+	font-size:1.4em;
+	float:left;
+}
+
+.parameters .enter-param input[type=text]{
+	width:60px;
+	background:transparent;
+	border:none;
+	font-size:20px;
+	margin:0px;
+	color:red;
+}
+
+
+.parameters .enter-param form{
+	
+}
+
+.parameters .enter-param form p{
+	font-size:22px;
+}
+
+.parameters .enter-param form #onFastSecond{
+	position:relative;
+	left:-35px;
+}
+
+.parameters .enter-param span{
+	position:relative;
+	left:-6px;
+	
+}
+
+.parameters .enter-param .spanAnd{
+	position:relative;
+	left:-45px;
+}
+
+.parameters .enter-param .spanOff{
+	position:relative;
+	left:-35px;
+}
+
+.parameters #SubmitValue{
+	float:right;
+	-webkit-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 5px rgba(0,0,0,1.0);
+	font-size : 20px;
+	color : #ffffff;
+	padding : 5px 10px;
+	background : -moz-linear-gradient(top, #053494 0%, #addbff 100%);
+	background : -webkit-linear-gradient(top, #053494 0%, #addbff 100%);
+	cursor:pointer;
+	margin-bottom:-5px;
+}
+
+/*Show values changed*/
+.parameters input{margin-right:30px;margin-bottom:15px;}
+.parameters .parametersBar{margin-top:35px; margin-bottom:15px; box-shadow: 5px 5px 15px #888888;-webkit-box-shadow: 5px 5px 25px #888888; padding:20px;}
+.parameters .showParam {float:left;margin-top:0px;}
+.parameters .showParam h3{width:280px; font-size:1.3em; font-weight:normal; line-height:30px;}
+.parameters .showParam h3 span{background:#ffffff; padding:2px 5px;}
+.parameters .showParam .showParamFix{width:200px; margin-left:40px}
+.parameters .showParam .showParamFix_2{width:350px;}
+
+/*Graphs*/
+.content .graph{
+	
+	
+}
+
+.content .graph h2{
+	text-decoration:underline;
+	margin-bottom:40px;
+}
+.content .canvasDiv{
+	width:100%;
+	overflow:auto;
+	
+}
+
+.canvas_group_1 {
+	width:100%;
+}
+
+.canvas_group_1  .canvas_in{
+	width:1200px;
+	margin: 0 auto;
+    margin-left: 0px;
+    
+}
+
+.canvas_group_1 .canvas_space{
+	float:right;
+}
+
+
+#variance_graph, #main_graph{
+		display: block;
+		background-color: #000;
+		margin-bottom:20px;
+
+}
+
+
+
+
+
+
+/*Graph Titles*/
+.graphTitles{
+color:white; font-family:Arial, Helvetica, sans-serif;font-weight:bold; font-size:17px;
+background-color:#000; padding:10px; margin-top:0px; margin-bottom:0px; border-bottom:1px solid #ffffff; width:1280px;
+
+}
+
+.graphTitles_2{
+	position:absolute;z-index:9999;color:white; font-family:Arial, Helvetica, sans-serif;font-weight:bold; font-size:17px;
+	margin-top:5px; margin-left:5px;
+}
+		
+
+
+.arrayDiv{
+	background : -moz-linear-gradient(top, #053494 0%, #addbff 100%);
+	background : -webkit-linear-gradient(top, #053494 0%, #addbff 100%);
+	padding:10px;
+}
+
+
+
+
+#hideButton, #showButton{
+	position:relative;
+	left:70%;
+	top:-20px;
+	padding:2px 10px;
+	background : -moz-linear-gradient(top, #000 0%, #ffffff 100%);	
+	background : -webkit-linear-gradient(top, #000 0%, #ffffff 100%);	
+	color:#ffffff;
+	font-weight:bold;
+	letter-spacing:2px;
+	cursor:pointer;
+}
+
+
+#hideButton:hover, #showButton:hover{
+	background : -moz-linear-gradient(top, #ffffff 0%, #000 100%);	
+	background : -webkit-linear-gradient(top, #ffffff 0%, #000 100%);	
+}
+
+#showButton{
+	display:none;
+}
+
+
+
+.scrollPage {
+	width:98%;
+	height:300px;
+	overflow:auto;
+	padding:10px 30px;
+	padding-left:0px;
+	position:relative;
+	
+	text-align:justify;
+	margin-bottom:150px;
+}
+
+.scrollPage .img_1{
+	float:left;
+	height:300px;
+	margin-right:15px; 
+}
+
+.scrollPage .img_2{
+	 display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
+#collectData{
+	position:absolute;
+	z-index:99999;
+	top:200px;
+	right:100px;
+	width:35%;
+	box-shadow: 5px 5px 15px #888888;
+	-webkit-box-shadow: 5px 5px 25px #888888; 
+	background : -moz-linear-gradient(top, #053494 0%, #addbff 100%);
+	background : -webkit-linear-gradient(top, #053494 0%, #addbff 100%);
+	color:#000;
+	padding:10px 20px;
+	display:none;
+}
+#collectData input{
+	padding:10px 30px;
+	font-size:18px;
+	float:right;
+	cursor:pointer;
+	text-align:left;
+}
+
+
+/*explanation*/
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+
+
